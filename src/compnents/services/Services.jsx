@@ -116,7 +116,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="text-right mt-8">
+      <div className="text-right font-Inter mt-8">
         <a
           href="/about"
           className="font-medium text-[#000000] leading-8 hover:text-blue-600"

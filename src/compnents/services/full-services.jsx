@@ -1,4 +1,12 @@
+import Aos from "aos";
+import { useEffect } from "react";
+
 export default function FullServices() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
   const services = [
     {
       title: "Residential Cleaning",
@@ -49,7 +57,10 @@ export default function FullServices() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 font-Inter py-4 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        data-aos="fade-right"
+        className="grid  grid-cols-1 font-Inter py-4 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
         {servicePattern.map((service, index) => (
           <div
             key={index}

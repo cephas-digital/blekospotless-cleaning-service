@@ -1,11 +1,22 @@
+import Aos from "aos";
+import { useEffect } from "react";
+
 export default function Testimonial() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <div className="mx-auto lg:px-24 md:px-20 px-8  p-4 md:p-8 py-16">
       <h2 className="text-4xl lg:text-[48px] lg:font-[700] Neue-Regrade font-bold text-center text-[#1D1E1C] mb-12">
         What Our Customers Say
       </h2>
 
-      <div className="grid grid-cols-1 font-Inter md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        data-aos="fade-left"
+        className="grid grid-cols-1 font-Inter md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
         {/* Testimonial 1 */}
         <div className="relative  font-Inter">
           <div className="bg-sky-200 p-10 rounded-2xl text-center h-full pb-16">

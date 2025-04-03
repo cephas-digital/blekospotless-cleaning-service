@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../compnents/navbar/Navbar";
 import Testimonial from "../compnents/testimonial/Testimonial";
 import Services from "../compnents/services/Services";
@@ -8,13 +8,22 @@ import chooseusImg from "../assets/chooseus.png";
 import heroImg from "../../src/assets/Image.webp";
 import Imgone from "../assets/imgone.png";
 import Imgtwo from "../assets/imgtwo.png";
+import Aos from "aos";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <div className="">
       <Navbar />
 
-      <div className="lg:flex py-16 font-sans lg:px-24 md:px-18 px-8 lg:justify-between bg-white">
+      <div
+        data-aos="zoom-in"
+        className="lg:flex py-16 font-sans lg:px-24 md:px-18 px-8 lg:justify-between bg-white"
+      >
         <div className="lg:w-1/2">
           <h1 className="lg:text-[90px] mt-4 Neue-Regrade text-5xl leading-[100%] font-bold text-black">
             Professional Cleaning Services for Homes & Businesses!
