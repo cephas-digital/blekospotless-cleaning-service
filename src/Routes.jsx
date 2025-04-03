@@ -1,25 +1,27 @@
 import { Route, Routes } from "react-router-dom";
 import PageRender from "./PageRender";
-// import Index from "./screens/index";
-import useAuthStore from "./data/Stores/Authstore";
+import Index from "./screens/index";
+// import useAuthStore from "./data/Stores/Authstore";
 import { ToastContainer } from "react-toastify";
 import Home from "./screens/home";
+import useAuthStore from "./data/Stores/Authstore";
 // import NotFound from "./screens/not-found";
-import { useFetchUserQuery } from "./api/userApi";
-import { useEffect } from "react";
+// import { useFetchUserQuery } from "./api/userApi";
+// import { useEffect } from "react";
 
 const Routers = () => {
-  const { isAuth, getUser, logout } = useAuthStore();
-  const { data: user, error } = useFetchUserQuery();
+  // const { isAuth, getUser, logout } = useAuthStore();
+  const { isAuth } = useAuthStore();
+  // const { data: user, error } = useFetchUserQuery();
 
-  useEffect(() => {
-    if (user) {
-      getUser(user);
-    }
-    if (error) {
-      logout();
-    }
-  }, [user, error, getUser, logout]);
+  // useEffect(() => {
+  //   if (user) {
+  //     getUser(user);
+  //   }
+  //   if (error) {
+  //     logout();
+  //   }
+  // }, [user, error, getUser, logout]);
 
   return (
     <>

@@ -24,24 +24,24 @@ const PageRender = () => {
     }
   };
 
-  useEffect(() => {
-    // Redirect to the homepage if the user is not authenticated
-    if (!isAuth) {
-      if (
-        page !== "login" &&
-        page !== "signup" &&
-        page !== "password-changed"
-      ) {
-        navigate("/");
-      }
-    }
-    // Redirect to the homepage if the user is authenticated and tries to access login or signup pages
-    if (isAuth) {
-      if (page === "login" || page === "signup") {
-        navigate("/");
-      }
-    }
-  }, [page, isAuth, navigate]);
+  // useEffect(() => {
+  //   // Redirect to the homepage if the user is not authenticated
+  //   if (!isAuth) {
+  //     if (
+  //       page !== "login" &&
+  //       page !== "signup" &&
+  //       page !== "password-changed"
+  //     ) {
+  //       navigate("/");
+  //     }
+  //   }
+  //   // Redirect to the homepage if the user is authenticated and tries to access login or signup pages
+  //   if (isAuth) {
+  //     if (page === "login" || page === "signup") {
+  //       navigate("/");
+  //     }
+  //   }
+  // }, [page, isAuth, navigate]);
 
   // Construct the page name based on URL params and available escape routes
   let pageName = "";

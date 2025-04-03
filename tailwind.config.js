@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-
     extend: {
       colors: {
         main: "#2F1893",
-        primary: "#0F172A"
+        primary: "#0F172A",
       },
       fontFamily: {
         Nunito: ["Nunito Sans", "sans-serif"],
@@ -18,6 +15,8 @@ module.exports = {
         Lato: ["Lato", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"],
         DMSans: ["DM Sans", "sans-serif"],
+        Neue: ["Bebas Neue", "sans - serif"],
+        Inter: ["Inter", "sans-serif"],
       },
       // fontWeight: {
       //   extrabold: '1000',
@@ -25,10 +24,7 @@ module.exports = {
     },
   },
   plugins: [],
-}
-
-
-
+};
 
 // /** @type {import('tailwindcss').Config} */
 // const withMT = require("@material-tailwind/react/utils/withMT");
