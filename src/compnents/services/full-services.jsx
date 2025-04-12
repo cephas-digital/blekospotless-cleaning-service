@@ -88,6 +88,7 @@ export default function FullServices() {
               <span
                 role="img"
                 aria-label="icon"
+                className=" text-5xl"
               >
                 {service.emoji}
               </span>

@@ -13,28 +13,12 @@ export default function Services() {
 
       <div className="grid  font-Inter py-4  grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-6">
         <div className="relative bg-[#C5EEFF] rounded-lg p-10 text-center">
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-            {/* <svg
-              width="120"
-              height="40"
-              viewBox="0 0 120 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5 20C5 20 30 5 60 20C90 35 115 20 115 20"
-                stroke="#0066CC"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg> */}
-          </div>
-
           <h3 className="text-xl font-bold mt-6 mb-3 flex items-center justify-center gap-2">
             Residential Cleaning{" "}
             <span
               role="img"
               aria-label="house"
+              className=" text-5xl"
             >
               🏠
             </span>
@@ -48,28 +32,12 @@ export default function Services() {
         </div>
 
         <div className="relative bg-[#C5EEFF] rounded-lg p-6 text-center">
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-            {/* <svg
-              width="120"
-              height="40"
-              viewBox="0 0 120 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5 20C5 20 30 5 60 20C90 35 115 20 115 20"
-                stroke="#0066CC"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg> */}
-          </div>
-
           <h3 className="text-xl font-bold mt-6 mb-3 flex items-center justify-center gap-2">
             Janitorial & Office Cleaning{" "}
             <span
               role="img"
               aria-label="office building"
+              className=" text-5xl"
             >
               🏢
             </span>
@@ -82,28 +50,14 @@ export default function Services() {
         </div>
 
         <div className="relative bg-[#C5EEFF] rounded-lg p-6 text-center">
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-            {/* <svg
-              width="120"
-              height="40"
-              viewBox="0 0 120 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5 20C5 20 30 5 60 20C90 35 115 20 115 20"
-                stroke="#0066CC"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg> */}
-          </div>
+          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2"></div>
 
           <h3 className="text-xl font-bold mt-6 mb-3 flex items-center justify-center gap-2">
             Carpet & Upholstery Cleaning{" "}
             <span
               role="img"
               aria-label="couch"
+              className=" text-5xl"
             >
               🛋️
             </span>

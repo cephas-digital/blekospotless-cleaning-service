@@ -17,7 +17,7 @@ export default function Testimonial() {
         data-aos="fade-left"
         className="grid grid-cols-1 font-Inter md:grid-cols-2 lg:grid-cols-3 gap-6"
       >
-        {/* Testimonial 1 */}
+        
         <div className="relative  font-Inter">
           <div className="bg-sky-200 p-10 rounded-2xl text-center h-full pb-16">
             <p className="text-gray-800">
@@ -34,7 +34,7 @@ export default function Testimonial() {
           </div>
         </div>
 
-        {/* Testimonial 2 */}
+       
         <div className="relative font-Inter">
           <div className="bg-sky-200 p-10 rounded-2xl text-center h-full pb-16">
             <p className="text-gray-800">
@@ -52,7 +52,7 @@ export default function Testimonial() {
           </div>
         </div>
 
-        {/* Testimonial 3 */}
+      
         <div className="relative font-Inter ">
           <div className="bg-sky-500 p-10 rounded-2xl text-center h-full pb-16">
             <p className="text-white">

@@ -25,7 +25,7 @@ export default function ContactUs() {
           </p>
 
           <div className="space-y-4 pt-4">
-            {/* Phone */}
+           
             <div className="flex items-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function ContactUs() {
               <span className="text-lg">Call Us: [Your Contact Number]</span>
             </div>
 
-            {/* Email */}
+           
             <div className="flex items-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ export default function ContactUs() {
               <span className="text-lg">Email Us: [Your Email Address]</span>
             </div>
 
-            {/* Location */}
+           
             <div className="flex items-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

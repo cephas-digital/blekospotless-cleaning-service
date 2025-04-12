@@ -117,16 +117,14 @@ const Navbar = () => {
   return (
     <nav className="py-4 px-4 md:py-8 md:px-14 lg:px-24 font-Inter">
       <div className="flex items-center justify-between">
-        {/* Logo */}
         <div>
           <img
-            src={Logo || "/placeholder.svg"}
+            src={Logo}
             className="w-32 md:w-40"
             alt="logo"
           />
         </div>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex list-none items-center gap-6">
           <Link to="/">
             <li
@@ -169,7 +167,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Hamburger Menu Button */}
         <button
           className="md:hidden text-gray-700 focus:outline-none"
           onClick={toggleMenu}
@@ -209,7 +206,8 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* MOBILE VIEW */}
+
       {isMenuOpen && (
         <div className="md:hidden mt-4 py-4 bg-white">
           <ul className="flex flex-col space-y-4 px-4">
@@ -231,7 +229,9 @@ const Navbar = () => {
             >
               <li
                 className={`py-2 ${
-                  currentPath === "/about" ? "text-blue-600 py-2 font-semibold" : ""
+                  currentPath === "/about"
+                    ? "text-blue-600 py-2 font-semibold"
+                    : ""
                 }`}
               >
                 About Us
